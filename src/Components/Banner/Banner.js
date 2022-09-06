@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div>
+        <div className=' bg-purple-300'>
             <div>
                 <div>
-                    <section className="container bg-purple-300 mx-auto text-left px-10 py-20">
+                    <section className="container mx-auto text-left px-10 py-20">
                         <div className="flex items-center justify-between flex-col lg:flex-row">
                             <div>
                                 <img className="lg:py-7 w-10/12 mx-auto" src="https://nieamulkabir.github.io/data-generate-file/Illustration.png" alt="" />

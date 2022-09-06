@@ -43,8 +43,8 @@ const Header = () => {
         </div>
     }
     return (
-        <div>
-            <nav className="custom-bg text-white mx-auto overflow-x-hidden">
+        <div className=''>
+            <nav className="bg-gray-400 text-white mx-auto overflow-x-hidden">
                 <ul className="flex justify-between my-5 items-center">
 
                     <li className="px-10 lg:pl-20 py-3 text-2xl font-bold">
@@ -96,7 +96,7 @@ const Header = () => {
             </nav>
             <hr />
 
-            
+
         </div>
     );
 };
