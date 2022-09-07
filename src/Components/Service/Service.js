@@ -11,8 +11,8 @@ const Service = (props) => {
                         <div className="card-body ">
                             <h2 className="card-title px-5 pt-5 text-3xl font-bold  text-violet-700">{title}</h2>
                             <p className="text-sm  text-gray-600">{sector}</p>
-                            <p className="px-5 pt-5 text-red-600">{description}</p>
-                            <p className='text-black font-semibold'>Fee : {price}</p>
+                            <p className="px-5 pt-5 text-xl text-red-600">{description}</p>
+                            <p className='text-black font-semibold text-xl'>Fee : {price}</p>
 
                             <div className="card-actions">
                                 <button className="btn btn-primary px-2 py-3 mt-6 mr-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">ENROLL NOW</button>
