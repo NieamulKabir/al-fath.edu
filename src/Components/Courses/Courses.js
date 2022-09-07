@@ -22,7 +22,7 @@ const Courses = () => {
                     ></Course>)
                 }
             </div>
-            <button className="px-8 py-3  mb-20 bg-green-400 custom-bg-font rounded hover:bg-white text-gray-800 transition duration-300 font-bold"> <NavLink to="/services">SEE ALL COURSES</NavLink></button>
+            <button className="px-8 py-3  mb-20 bg-violet-600 text-white rounded hover:bg-white hover:text-gray-800 transition duration-300 font-bold font-serif"> <NavLink to="/services">SEE ALL COURSES</NavLink></button>
         </div>
     );
 };

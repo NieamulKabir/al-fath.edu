@@ -3,8 +3,7 @@ import React from 'react';
 const Course = (props) => {
     const { img, sector, title, description, price } = props.course
     return (
-        <div>
-
+        <div className='font-serif'>
             <div className="transform hover:-translate-y-3 to-hover text-center secondary-bg transition duration-300 w-full mx-auto bg-gray-200 rounded-2xl">
                 <div className="card lg:card-side bg-base-100 shadow-xl rounded-2xl">
                     <figure><img className='h-64 w-full rounded-2xl' src={img} alt="Album" /></figure>

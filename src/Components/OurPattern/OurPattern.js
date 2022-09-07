@@ -67,7 +67,7 @@ const OurPattern = () => {
                             </div>
                         </div>
                     </div>
-                    <button className="flex mx-auto mt-16 text-gray-800 bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-white transition duration-300 rounded text-lg"><NavLink to="/contact">CONTACT US</NavLink></button>
+                    <button className="font-bold flex mx-auto mt-16 text-white hover:text-gray-800 bg-violet-600 border-0 py-2 px-8 focus:outline-none hover:bg-white transition duration-300 rounded text-lg"><NavLink to="/contact">CONTACT US</NavLink></button>
                 </div>
             </section>
         </div>
