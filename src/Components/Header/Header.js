@@ -4,39 +4,51 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 
+let activeStyle = {
+    textDecoration: "underline",
+    color:'red'
+    
+};
+
 const Header = () => {
     const [displayMenu, setDisplayMenu] = useState(false);
     let navBar;
     if (displayMenu) {
         navBar = <div className="text-base fixed top-0 left-0 w-4/5 h-full transition ease-in-out delay-150 -translate-y-1 duration-700  bg-violet-900 shadow z-50">
             <h1 className="pt-10">
-                <NavLink to="/home" activeStyle={{
-                    color: "#34D399"
-                }}>
+                <NavLink to="/home"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
                     <button className="py-3">HOME</button>
                 </NavLink>
             </h1>
 
             <h1 className="">
-                <NavLink to="/about" activeStyle={{
-                    color: "#34D399"
-                }}>
+                <NavLink to="/about"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
                     <button className="py-3">ABOUT</button>
                 </NavLink>
             </h1>
 
             <h1 className="">
-                <NavLink to="/services" activeStyle={{
-                    color: "#34D399"
-                }}>
+                <NavLink to="/services"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }>
                     <button className="py-3">SERVICES</button>
                 </NavLink>
             </h1>
 
             <h1 className="">
-                <NavLink to="/contact" activeStyle={{
-                    color: "#34D399"
-                }}>
+                <NavLink to="/contact"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }>
                     <button className="py-3">CONTACT</button>
                 </NavLink>
             </h1>
@@ -60,37 +72,39 @@ const Header = () => {
 
                     <div className="hidden md:flex">
 
-                        <li className="mx-5 font-bold">
-                            <NavLink to="/home" activeStyle={{
-                                fontWeight: "bold",
-                                color: "#34D399"
-                            }}>
-                                <button className="py-3 px-4 bg-green-400 custom-bg-font rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">HOME</button>
+                        <li className="mx-5 py-3 px-4 font-bold bg-green-400 rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">
+                            <NavLink to="/home"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }>HOME
                             </NavLink>
                         </li>
 
 
-                        <li className="font-bold mx-5">
-                            <NavLink to="/about" activeStyle={{
-                                fontWeight: "bold",
-                                color: "rgb(244 63 94)"
-                            }}>
-                                <button className="py-3 px-4 bg-green-400 custom-bg-font rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">ABOUT</button>
+                        <li className="mx-5 py-3 px-4 font-bold bg-green-400 rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">
+                            <NavLink to="/about"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }>ABOUT
                             </NavLink>
                         </li>
 
 
-                        <li className="font-bold mx-5">
-                            <NavLink to="/services" activeStyle={{
-                                fontWeight: "bold",
-                                color: "#34D399"
-                            }}><button className="py-3 px-4 bg-green-400 custom-bg-font rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">SERVICES</button>
+                        <li className="mx-5 py-3 px-4 font-bold bg-green-400 rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">
+                            <NavLink to="/services"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }>SERVICES    
                             </NavLink>
                         </li>
 
-                        <li className="font-bold mx-5 mr-10 pr-10 hidden md:flex">
-                            <NavLink to="/contact">
-                                <button className="px-4 py-3 bg-green-400 custom-bg-font rounded text-white hover:bg-white hover:text-gray-700 transition duration-300">CONTACT</button>
+                        <li className="mx-5 py-3 px-4 font-bold bg-green-400 rounded text-white hover:bg-white hover:text-gray-700 transition duration-300 mr-14">
+                            <NavLink to="/contact"
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }
+                            >
+                            <p>CONTACT</p>
                             </NavLink>
                         </li>
                     </div>
