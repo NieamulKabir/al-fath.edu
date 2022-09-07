@@ -8,7 +8,7 @@ const Header = () => {
     const [displayMenu, setDisplayMenu] = useState(false);
     let navBar;
     if (displayMenu) {
-        navBar = <div className="fixed bg-gray-900 top-0 left-0 w-4/5 h-full transition duration-500 shadow z-50">
+        navBar = <div className="text-base fixed top-0 left-0 w-4/5 h-full transition ease-in-out delay-150 -translate-y-1 duration-700  bg-violet-900 shadow z-50">
             <h1 className="pt-10">
                 <NavLink to="/home" activeStyle={{
                     color: "#34D399"
@@ -17,27 +17,27 @@ const Header = () => {
                 </NavLink>
             </h1>
 
-            <h1 className="pt-10">
+            <h1 className="">
                 <NavLink to="/about" activeStyle={{
                     color: "#34D399"
                 }}>
-                    <button className="py-3 ">ABOUT</button>
+                    <button className="py-3">ABOUT</button>
                 </NavLink>
             </h1>
 
-            <h1 className="pt-10">
+            <h1 className="">
                 <NavLink to="/services" activeStyle={{
                     color: "#34D399"
                 }}>
-                    <button className="py-3 ">SERVICES</button>
+                    <button className="py-3">SERVICES</button>
                 </NavLink>
             </h1>
 
-            <h1 className="pt-10">
+            <h1 className="">
                 <NavLink to="/contact" activeStyle={{
                     color: "#34D399"
                 }}>
-                    <button className="py-3 ">CONTACT</button>
+                    <button className="py-3">CONTACT</button>
                 </NavLink>
             </h1>
         </div>
@@ -48,11 +48,13 @@ const Header = () => {
                 <ul className="flex justify-between my-5 items-center">
 
                     <li className="px-10 lg:pl-20 py-3 text-2xl font-bold">
-                        <a href="/home"><img className='w-60 h-10' src="https://nieamulkabir.github.io/data-generate-file/logo.png" alt="" /></a>
+                        <a href="/home">
+                            <img className='w-60 h-10' src="https://nieamulkabir.github.io/data-generate-file/logo.png" alt="" />
+                        </a>
                     </li>
 
-                    <li onClick={() => setDisplayMenu(!displayMenu)} className="md:hidden text-2xl px-5">
-                        <FontAwesomeIcon icon={faBarsProgress} />
+                    <li onClick={() => setDisplayMenu(!displayMenu)} className="md:hidden text-xl px-5">
+                        <FontAwesomeIcon className='w-10 h-16' icon={faBarsProgress} />
                         {navBar}
                     </li>
 

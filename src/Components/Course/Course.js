@@ -16,7 +16,7 @@ const Course = (props) => {
                             <p className='text-black'>Fee : {price}</p>
                             <button className="btn btn-primary px-2 py-3 mt-6 mb-8 mr-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">ENROLL NOW</button>
 
-                            <button className="btn btn-primary px-5 py-3 mt-6 mb-8 ml-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">Details</button>
+                            <button className="btn btn-primary px-5 py-3 mt-6 mb-8 ml-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">DETAILS</button>
                         </div>
                     </div>
                 </div>

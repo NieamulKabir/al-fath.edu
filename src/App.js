@@ -4,8 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
-// import Service from './Components/Service/Service';
 import Services from './Components/Services/Services';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
