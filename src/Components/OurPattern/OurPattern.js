@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const OurPattern = () => {
     return (
-        <div className=' bg-purple-300'>
+        <div className=' bg-purple-300 font-serif'>
             <section className="text-gray-400 custom-bg body-font">
                 <div className="container px-5 pb-24 mx-auto">
                     <div className="text-center mb-20">

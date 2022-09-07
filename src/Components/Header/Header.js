@@ -43,7 +43,7 @@ const Header = () => {
         </div>
     }
     return (
-        <div className=''>
+        <div className='font-serif'>
             <nav className="bg-gray-400 text-white mx-auto overflow-x-hidden">
                 <ul className="flex justify-between my-5 items-center">
 
