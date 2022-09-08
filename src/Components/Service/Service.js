@@ -15,9 +15,9 @@ const Service = (props) => {
                         <p className='text-black font-semibold text-lg'>Fee : {price}</p>
 
                         <div className="card-actions">
-                            <button className="btn btn-primary text-xs md:text-sm lg:text-lg px-2 py-3 mt-6 mr-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">ENROLL NOW</button>
+                            <button className="btn btn-primary text-xs px-2 py-3 mt-6 mr-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">ENROLL NOW</button>
 
-                            <button className="btn btn-primary text-xs md:text-sm lg:text-lg px-5 py-3 mt-6  ml-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">DETAILS</button>
+                            <button className="btn btn-primary text-xs  px-5 py-3 mt-6  ml-2 bg-violet-500 custom-bg-font rounded hover:bg-white text-white hover:text-black fond-medium transition duration-300">DETAILS</button>
 
                         </div>
                     </div>
