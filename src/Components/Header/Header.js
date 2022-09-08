@@ -65,7 +65,7 @@ const Header = () => {
                         </a>
                     </li>
 
-                    <li onClick={() => setDisplayMenu(!displayMenu)} className="md:hidden text-xl px-5">
+                    <li onClick={() => setDisplayMenu(!displayMenu)} className="md:hidden lg:text-xl px-5">
                         <FontAwesomeIcon className='w-10 h-16' icon={faBarsProgress} />
                         {navBar}
                     </li>

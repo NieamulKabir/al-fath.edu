@@ -27,11 +27,11 @@ const Footer = () => {
                 </a>
             </div>
             <div className=' bg-violet-300'>
-                <p className='font-bold text-3xl text-white font-serif pb-10'>kabir000079@gmail.com</p>
+                <p className='font-bold text-lg lg:text-3xl text-white font-serif pb-10'>kabir000079@gmail.com</p>
             </div>
             <div className='mx-auto bg-violet-400 flex justify-center items-center py-10'>
-                <img className='w-60 h-10 mr-10' src="https://nieamulkabir.github.io/data-generate-file/logo.png" alt="" />
-                <h1 className='text-xl text-white font-bold'> © 2022 <span className='text-red-700'>Al-Fath.EDU</span> @Md. Nieamul KaBir</h1>
+                <img className='w-1/2 lg:w-60 h-10 mr-10' src="https://nieamulkabir.github.io/data-generate-file/logo.png" alt="" />
+                <h1 className='text-lg lg:text-xl text-white font-bold'> © 2022 <span className='text-red-700'>Al-Fath.EDU</span> @Md. Nieamul KaBir</h1>
             </div>
 
         </div>
